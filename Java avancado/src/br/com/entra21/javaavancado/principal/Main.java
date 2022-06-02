@@ -4,6 +4,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 import br.com.entra21.javaavancado.principal.aula01.enums.PersonagemJogo;
+import br.com.entra21.javaavancado.principal.aula02.collections.list.AprenderCollection;
 
 public class Main {
 
@@ -35,6 +36,10 @@ public class Main {
 				aprenderEnum();
 				break;
 
+			case 3:
+				AprenderCollection.aprender();
+				break;
+
 			default:
 				System.out.println("Opção inválida!");
 				break;
@@ -57,18 +62,19 @@ public class Main {
 		System.out.println("Gosto deste tipo de personagem " + PersonagemJogo.ANAO);
 		System.out.println("Geralmente a classe " + PersonagemJogo.ANAO + " tem HP " + PersonagemJogo.ANAO.getHP());
 		System.out.println("Veja a caracteristica mais comum dele " + PersonagemJogo.ANAO.getDESCRICAO());
-		System.out.println("O mago está no indice do ENMUM " +PersonagemJogo.BARBARO.ordinal());
+		System.out.println("O mago está no indice do ENMUM " + PersonagemJogo.BARBARO.ordinal());
 		System.out.println("Veja a descrição completa do " + PersonagemJogo.BARBARO + " sua vida é "
 				+ PersonagemJogo.BARBARO.getHP() + " e sua habilidade principal "
 				+ PersonagemJogo.BARBARO.getDESCRICAO());
 
 		for (int personagem = 0; personagem < PersonagemJogo.values().length; personagem++) {
-			System.out.println("O contador é "+personagem+" posição do ENUM é "+PersonagemJogo.values()[personagem].ordinal());
-			System.out.println("O personagem "+PersonagemJogo.values()[personagem].name());
+			System.out.println("O contador é " + personagem + " posição do ENUM é "
+					+ PersonagemJogo.values()[personagem].ordinal());
+			System.out.println("O personagem " + PersonagemJogo.values()[personagem].name());
 			System.out.println(PersonagemJogo.values()[personagem].getHP());
 			System.out.println(PersonagemJogo.values()[personagem].getDESCRICAO());
 			System.out.println("--------------------------------------------------");
-			
+
 		}
 	}
 
@@ -96,6 +102,7 @@ public class Main {
 		menu += "\n0 - Sair";
 		menu += "\n1 - Wrapper";
 		menu += "\n2 - ENUM";
+		menu += "\n3 - Collection List";
 		menu += "\nEscolha uma das opções";
 		return menu;
 
