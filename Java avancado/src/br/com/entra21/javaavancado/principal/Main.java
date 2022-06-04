@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import br.com.entra21.javaavancado.principal.aula01.enums.PersonagemJogo;
 import br.com.entra21.javaavancado.principal.aula02.collections.list.AprenderCollection;
+import br.com.entra21.javaavancado.principal.aula03.Aula03;
 
 public class Main {
 
@@ -38,6 +39,10 @@ public class Main {
 
 			case 3:
 				AprenderCollection.aprender();
+				break;
+				
+			case 4:
+				Aula03.aprender();
 				break;
 
 			default:
@@ -103,6 +108,7 @@ public class Main {
 		menu += "\n1 - Wrapper";
 		menu += "\n2 - ENUM";
 		menu += "\n3 - Collection List";
+		menu += "\n4 - Annotation and dates";
 		menu += "\nEscolha uma das opções";
 		return menu;
 
